@@ -51,9 +51,7 @@ var settings = module.exports = {
 
     functionGlobalContext: { },
 
-    storageModule: require("./couchstorage"),
-    
-    httpNodeCors: { origin: "*", methods: ['GET','PUT','POST','DELETE'] }
+    storageModule: require("./couchstorage")
 }
 
 if (process.env.NODE_RED_USERNAME && process.env.NODE_RED_PASSWORD) {
